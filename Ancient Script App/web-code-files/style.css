@@ -12,6 +12,57 @@ body{
     word-spacing: 5px;
 }
 
+
+/* General styles for large screens */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+/* Styles for screens smaller than 768px (tablets and phones) */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    .header h1 {
+        font-size: 24px;
+    }
+
+    .drawing-canva canvas {
+        width: 100%;
+        height: auto;
+    }
+
+    .img-bookmarks img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Styles for screens smaller than 480px (small phones) */
+@media (max-width: 480px) {
+    .header h1 {
+        font-size: 18px;
+    }
+
+    .img {
+        flex-direction: column;
+    }
+
+    .img img {
+        width: 100%;
+    }
+}
+
+
+
 .white-background{
     background-color:rgb(255, 221, 141);
     padding:90px;
